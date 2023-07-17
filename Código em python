@@ -1,0 +1,40 @@
+# Função para adicionar dois números
+def adicionar(a, b):
+    return a + b
+
+# Função para subtrair dois números
+def subtrair(a, b):
+    return a - b
+
+# Função para multiplicar dois números
+def multiplicar(a, b):
+    return a * b
+
+# Função para dividir dois números
+def dividir(a, b):
+    return a / b
+
+# Função principal da calculadora
+def calculadora():
+    operacao = input("Escolha uma operação (+, -, *, /): ")
+
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+
+    resultado = 0
+
+    if operacao == "+":
+        resultado = adicionar(num1, num2)
+    elif operacao == "-":
+        resultado = subtrair(num1, num2)
+    elif operacao == "*":
+        resultado = multiplicar(num1, num2)
+    elif operacao == "/":
+        resultado = dividir(num1, num2)
+    else:
+        print("Operação inválida!")
+
+    print("Resultado: ", resultado)
+
+# Chama a função principal da calculadora
+calculadora()
